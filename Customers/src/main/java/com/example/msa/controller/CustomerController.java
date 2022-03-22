@@ -12,6 +12,8 @@ public class CustomerController {
 	public String getCustomerDetail(@PathVariable String customerId) {
 		
 		System.out.println("reeuqest customerId : " + customerId);
+		
+		//throw new RuntimeException("I/O Exception");
 		return "[Customer Id =" + customerId + " at " + System.currentTimeMillis() + "]";
 	}
 }
